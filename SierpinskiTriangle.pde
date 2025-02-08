@@ -1,12 +1,8 @@
 int canvas = 1000;
 int shapeSize = 500;
 float baseCase = 400;
-int[] colors = {
-  color(255, 0, 0),
-  color(0, 255, 0),
-  color(0, 0, 255),
-};
-int chosenColor = colors[(int)(Math.random()*3)];
+
+int chosenColor = color(0, 255, 0);
 void setup() {
   size(1000, 1000);
   background(0);
