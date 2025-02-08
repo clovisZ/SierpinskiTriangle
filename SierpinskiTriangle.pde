@@ -19,7 +19,7 @@ public void draw() {
   sierpinski((canvas/2) - (shapeSize/2), (canvas/2) + (shapeSize/2), shapeSsize);
 }
 
-public void sierpinski (int x, int y, int len) {
+public void sierpinski (float x, float y, int len) {
   if (len <= baseCase) {
     triangle(x, y, x + len/2, y - len, x + len, y);
   } else {
