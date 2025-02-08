@@ -30,10 +30,10 @@ public void sierpinski (float x, float y, float len) {
 }
 
 public void keyPressed(){
-  if (keyCode == UP && baseCase > 5) {
+  if (key == 'w' && baseCase > 5) {
     baseCase = baseCase / 2;
     chosenColor = colors[(int)(Math.random()*3)];
-  } else if (keyCode == DOWN && baseCase < 500) {
+  } else if (key == 's' && baseCase < 500) {
     baseCase = baseCase * 2;
     chosenColor = colors[(int)(Math.random()*3)];
   }
