@@ -1,5 +1,5 @@
 int canvas = 1000;
-int size = 500;
+int shapeSize = 500;
 float baseCase = 400;
 int[] colors = {
   color(255, 0, 0),
@@ -16,7 +16,7 @@ public void draw() {
   noStroke();
   background(0);
   fill(chosenColor);
-  sierpinski((canvas/2) - (size/2), (canvas/2) + (size/2), size);
+  sierpinski((canvas/2) - (shapeSize/2), (canvas/2) + (shapeSize/2), shapeSize);
 }
 
 public void sierpinski (float x, float y, float len) {
