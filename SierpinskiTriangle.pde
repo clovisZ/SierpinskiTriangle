@@ -1,6 +1,6 @@
 int canvas = 1000;
 int size = 500;
-int baseCase = 400;
+float baseCase = 400;
 int[] colors = {
   color(255, 0, 0),
   color(0, 255, 0),
