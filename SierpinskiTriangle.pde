@@ -1,5 +1,5 @@
 int canvas = 1000;
-int shapeSize = 500;
+int size = 500;
 float baseCase = 400;
 int[] colors = {
   color(255, 0, 0),
@@ -16,7 +16,7 @@ public void draw() {
   noStroke();
   background(0);
   fill(chosenColor);
-  sierpinski((canvas/2) - (shapeSize/2), (canvas/2) + (shapeSize/2), shapeSsize);
+  sierpinski((canvas/2) - (size/2), (canvas/2) + (size/2), size);
 }
 
 public void sierpinski (float x, float y, float len) {
@@ -29,11 +29,11 @@ public void sierpinski (float x, float y, float len) {
   }
 }
 
-public void mousePressed(){
-  if (mouseButton == LEFT && baseCase > 5) {
+public void keyPressed(){
+  if (keyCode == UP && baseCase > 5) {
     baseCase = baseCase / 2;
     chosenColor = colors[(int)(Math.random()*3)];
-  } else if (mouseButton == RIGHT && baseCase < 500) {
+  } else if (keyCode == DOWN && baseCase < 500) {
     baseCase = baseCase * 2;
     chosenColor = colors[(int)(Math.random()*3)];
   }
